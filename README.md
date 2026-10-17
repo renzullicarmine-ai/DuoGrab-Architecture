@@ -82,8 +82,60 @@ Sending extremely large files via WebRTC requires strict memory management to pr
 *   **Chunking:** The `FileReader` slices files into exact `16KB` chunks.
 *   **Buffer Management:** The system actively monitors `dataChannel.bufferedAmount`. If it exceeds 1MB, it pauses the `FileReader` until the network buffer drains.
 *   **Garbage Collection:** Received files are held in RAM via `Blob`. A dedicated UI warns the user if RAM usage exceeds limits, allowing instant cleanup via `URL.revokeObjectURL()`.
-
 ---
+## 📸 The UI Workflow & User Experience
+
+<details>
+  <summary><b>👉 Click here to expand the Step-by-Step Visual Workflow</b></summary>
+  <br>
+  
+  <table>
+    <tr>
+      <td width="50%">
+        <b>1. Landing & Initiation</b><br>
+        <i>Clean interface. Zero registration required.</i><br>
+        <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_01_Landing-Page.png" width="100%">
+      </td>
+      <td width="50%">
+        <b>2. Secure Room Creation</b><br>
+        <i>A 4-character ephemeral PIN is generated.</i><br>
+        <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_02_Connection-Code.png" width="100%">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>3. Asymmetric Visual 2FA</b><br>
+        <i>Emoji-based handshake to prevent MITM attacks.</i><br>
+        <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_03_Emoji-2FA.png" width="100%">
+      </td>
+      <td>
+        <b>4. Encrypted Private Chat</b><br>
+        <i>Side-channel communication over the WebRTC data channel.</i><br>
+        <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_04_Chat.png" width="100%">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>5. Real-Time File Transfer</b><br>
+        <i>Drag & Drop chunking at maximum LAN/WAN speed.</i><br>
+        <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_05_Transfer.png" width="100%">
+      </td>
+      <td>
+        <b>6. Bidirectional Flow</b><br>
+        <i>Both users can send and receive files simultaneously.</i><br>
+        <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_06_Bidirectional-Transfer.png" width="100%">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <b>7. The "Kill Switch" (Session Ended)</b><br>
+        <i>When closed, the tunnel ceases to exist. Zero footprint left behind.</i><br>
+        <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_07_Feedback.png" width="50%">
+      </td>
+    </tr>
+  </table>
+
+</details>
 
 https://github.com/user-attachments/assets/e0ca8f90-5533-4346-89ac-bdd140c2229a
 
