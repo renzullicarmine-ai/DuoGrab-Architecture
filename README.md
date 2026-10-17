@@ -30,8 +30,7 @@ Corporate IT departments waste budgets and expose sensitive data to breach risks
 DuoGrab bypasses the *upload-then-download* paradigm. It connects point A to point B directly. **No server storage, no database limits, zero-knowledge by design.**
 
 <div align="center">
-  <!-- Inserisci qui lo screenshot della dashboard in dark mode con un trasferimento in corso -->
-  <img src="assets/dashboard-dark.png" alt="DuoGrab Dashboard" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+  <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_05_Transfer_alpha.png" alt="DuoGrab Dashboard" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
   <br>
   <em>Simultaneous bidirectional transfer at LAN speed.</em>
 </div>
@@ -57,8 +56,7 @@ The stack was architected for absolute minimum latency and maximum browser perfo
 DuoGrab relies on a deterministic, ephemeral handshake to prevent Man-in-the-Middle (MITM) attacks, ensuring the person receiving the file is exactly who you expect.
 
 <div align="center">
-  <!-- Inserisci qui lo screenshot del momento in cui si sceglie l'emoji -->
-  <img src="assets/emoji-2fa.png" alt="Visual 2FA Emoji Handshake" width="500" style="border-radius: 10px;"/>
+  <img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_03_Emoji-2FA_alpha.png" alt="Visual 2FA Emoji Handshake" width="800" style="border-radius: 10px;"/>
 </div>
 
 1. The server selects 3 random emojis.
