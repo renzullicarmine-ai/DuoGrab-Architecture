@@ -89,3 +89,5 @@ Sending extremely large files via WebRTC requires strict memory management to pr
   <h3>Ready to test the Zero-Knowledge transfer?</h3>
   <a href="https://duograb.com"><img src="https://img.shields.io/badge/Open_DuoGrab.com-0052FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Open DuoGrab"/></a>
 </div>
+<div align="center">
+  <a href="https://duograb.com"><img src="https://github.com/renzullicarmine-ai/DuoGrab-Architecture/blob/main/assets/DuoGrab_Favicon-Blue_v2.png" alt="DuoGrab Logo" width="70"/>
